@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ewfm"
+version = "0.1.0"
+description = "Energy-Weighted Flow Matching for Boltzmann sampling"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE.txt" }
+
+[tool.setuptools.packages.find]
+include = ["ewfm*"]

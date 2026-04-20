@@ -1,0 +1,19 @@
+defaults:
+  - model_checkpoint
+  - model_summary
+  - rich_progress_bar
+  - _self_
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "epoch_{epoch:03d}"
+  monitor: "val/wasserstein_2_distance"
+  mode: "min"
+  every_n_epochs: ${trainer.check_val_every_n_epoch} # number of epochs between checkpoints
+  save_last: True
+  save_top_k: 1
+  auto_insert_metric_name: False
+  verbose: true
+
+model_summary:
+  max_depth: -1

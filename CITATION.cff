@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Energy-Weighted Flow Matching: Unlocking Continuous Normalizing Flows for Efficient and Scalable Boltzmann Sampling"
+authors:
+  - family-names: Dern
+    given-names: Niclas
+  - family-names: Redl
+    given-names: Lennart
+  - family-names: Pfister
+    given-names: Sebastian
+  - family-names: Kollovieh
+    given-names: Marcel
+  - family-names: Lüdke
+    given-names: David
+  - family-names: Günnemann
+    given-names: Stephan
+license: MIT
+preferred-citation:
+  type: article
+  title: "Energy-Weighted Flow Matching: Unlocking Continuous Normalizing Flows for Efficient and Scalable Boltzmann Sampling"
+  authors:
+    - family-names: Dern
+      given-names: Niclas
+    - family-names: Redl
+      given-names: Lennart
+    - family-names: Pfister
+      given-names: Sebastian
+    - family-names: Kollovieh
+      given-names: Marcel
+    - family-names: Lüdke
+      given-names: David
+    - family-names: Günnemann
+      given-names: Stephan
+  year: 2025
+  journal: "arXiv preprint arXiv:2509.03726"
+  url: "https://arxiv.org/abs/2509.03726"

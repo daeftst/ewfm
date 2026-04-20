@@ -1,0 +1,18 @@
+# https://wandb.ai
+
+wandb:
+  _target_: lightning.pytorch.loggers.wandb.WandbLogger
+  # Optional: Specify a custom run name via the `WANDB_RUN_NAME` environment
+  # variable or override on the command line with `logger.wandb.name=<your_name>`.
+  name: ${oc.env:WANDB_RUN_NAME,}
+  save_dir: "${paths.output_dir}"
+  offline: False
+  id: null # pass correct id to resume experiment!
+  anonymous: null # enable anonymous logging
+  project: ${oc.env:WANDB_PROJECT,ewfm}
+  log_model: False # upload lightning ckpts
+  prefix: "" # a string to put at the beginning of metric keys
+  entity: ${oc.env:WANDB_ENTITY,null} # set to name of your wandb team
+  group: ""
+  tags: []
+  job_type: ""

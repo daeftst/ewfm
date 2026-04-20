@@ -1,0 +1,32 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - data: dummy # choose datamodule with `test_dataloader()` for evaluation
+  - energy: gmm
+  - model: ewfm
+  - logger: wandb
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+
+  - experiment: gmm
+
+task_name: "eval"
+
+tags: ["dev"]
+
+# Save samples for training evaluation model
+save_samples: false
+num_samples: 100000
+
+# Batched sampling configuration (optional)
+batched_sampling: false
+sample_batch_size: 1000
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: "ewfm_results/logs/train/runs/.../checkpoints/xxx_epoch.ckpt"
+
+# Save samples to directory
+sample_dataset_name: null
