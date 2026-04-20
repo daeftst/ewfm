@@ -1,8 +1,6 @@
 # Energy-Weighted Flow Matching
 
-Official code for the paper [Energy-Weighted Flow Matching: Unlocking Continuous Normalizing Flows for Efficient and Scalable Boltzmann Sampling](https://arxiv.org/abs/2509.03726).
-
-This repository implements Energy-Weighted Flow Matching (EWFM) for Boltzmann sampling. The implementation builds on the codebase from the [iDEM-paper](https://github.com/jarridrb/DEM).
+Official implementation of [Energy-Weighted Flow Matching (EWFM)](https://arxiv.org/abs/2509.03726), a scalable approach to Boltzmann sampling with continuous normalizing flows. The implementation builds on the codebase from the [iDEM paper](https://github.com/jarridrb/DEM).
 
 Similar to the iDEM codebase, the GMM task uses the [FAB torch](https://github.com/lollcat/fab-torch) code, and the project layout and Hydra/Lightning utilities are based on the [hydra lightning template](https://github.com/ashleve/lightning-hydra-template).
 
