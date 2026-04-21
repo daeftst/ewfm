@@ -4,6 +4,8 @@ Official implementation of [Energy-Weighted Flow Matching (EWFM)](https://arxiv.
 
 Similar to the iDEM codebase, the GMM task uses the [FAB torch](https://github.com/lollcat/fab-torch) code, and the project layout and Hydra/Lightning utilities are based on the [hydra lightning template](https://github.com/ashleve/lightning-hydra-template).
 
+Big thanks to [Lennart Redl](https://github.com/LennartRedl) and [Sebastian Pfister](https://github.com/pfistse), who also contributed to this codebase.
+
 ## Structure
 
 - `ewfm/`: Core implementation of the models and methods
